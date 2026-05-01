@@ -1,0 +1,52 @@
+
+> team-task-manager@1.0.0 dev
+> concurrently "npm run dev --workspace server" "npm run dev --workspace client"
+
+[0] 
+[0] > team-task-manager-server@1.0.0 dev
+[0] > nodemon src/index.js
+[0] 
+[1] 
+[1] > team-task-manager-client@1.0.0 dev
+[1] > vite
+[1] 
+[0] [33m[nodemon] 3.1.14[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching path(s): *.*[39m
+[0] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[0] [32m[nodemon] starting `node src/index.js`[39m
+[1] Port 5173 is in use, trying another one...
+[1] 
+[1]   [32m[1mVITE[22m v6.4.2[39m  [2mready in [0m[1m354[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+[1] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[0] (node:17344) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[0] (Use `node --trace-warnings ...` to show where the warning was created)
+[0] node:events:486
+[0]       throw er; // Unhandled 'error' event
+[0]       ^
+[0] 
+[0] Error: listen EADDRINUSE: address already in use :::4000
+[0]     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+[0]     at listenInCluster (node:net:1997:12)
+[0]     at Server.listen (node:net:2102:7)
+[0]     at app.listen (C:\Users\vksin\Documents\Codex\2026-05-01\files-mentioned-by-the-user-team\node_modules\express\lib\application.js:635:24)
+[0]     at Object.<anonymous> (C:\Users\vksin\Documents\Codex\2026-05-01\files-mentioned-by-the-user-team\server\src\index.js:748:5)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[0]     at Object..js (node:internal/modules/cjs/loader:1893:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1481:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:1300:12)
+[0]     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+[0] Emitted 'error' event on Server instance at:
+[0]     at emitErrorNT (node:net:1976:8)
+[0]     at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+[0]   code: 'EADDRINUSE',
+[0]   errno: -4091,
+[0]   syscall: 'listen',
+[0]   address: '::',
+[0]   port: 4000
+[0] }
+[0] 
+[0] Node.js v24.11.1
+[0] [31m[nodemon] app crashed - waiting for file changes before starting...[39m

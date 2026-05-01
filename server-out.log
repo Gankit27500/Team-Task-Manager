@@ -1,0 +1,4 @@
+Team Task Manager API listening on port 4000
+SQLite database file: C:\Users\vksin\Documents\Codex\2026-05-01\files-mentioned-by-the-user-team\server\data\team-task-manager.db
+[0mPOST /api/auth/register [32m201[0m 83.413 ms - 432[0m
+[0mPOST /api/projects [31m500[0m 3.453 ms - 49[0m
